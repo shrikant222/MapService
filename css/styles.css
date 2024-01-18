@@ -1,0 +1,91 @@
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.list-group-item {
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: #33B5E5;
+    border-color: #33B5E5;
+}
+
+.btn-primary:hover {
+    background-color: #1D96C2;
+    border-color: #1D96C2;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-success:hover {
+    background-color: #3A9240;
+    border-color: #3A9240;
+}
+
+.btn-danger {
+    background-color: #FF5733;
+    border-color: #FF5733;
+}
+
+.btn-danger:hover {
+    background-color: #FF3417;
+    border-color: #FF3417;
+}
+
+h1
+{
+    color: #0c0571 ;
+}
+ 
+h2 {
+    color: #33B5E5;
+}
+
+.btn-sm {
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+body {
+    background-color: #aedcf0; /* Change the background color to pastel blue */
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container {
+    background-color: white; /* Set a white background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+    color: #007bff; /* Change the text color to blue */
+}
+
+.form-control {
+    border: 2px solid #007bff; /* Set a blue border for the input field */
+    border-radius: 5px;
+}
+
+.form-control:required {
+    border: 2px solid #007bff; /* Highlight the input field for required input */
+}
