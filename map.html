@@ -5,48 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            text-align: center;
+            background-color: #f8f9fa;
         }
 
-        h1 {
-            color: #333;
-        }
-
-        label {
-            display: block;
-            margin-top: 20px;
-            font-size: 16px;
-        }
-
-        #pinCodeInput {
-            padding: 8px;
-            font-size: 16px;
-        }
-
-        #showLocationBtn {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
+        .container {
+            max-width: 800px;
         }
 
         #map {
             height: 400px;
             width: 100%;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
             margin-top: 20px;
         }
-        </style>
+
+        h1 {
+            color: #007bff;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #495057;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body>
-    <h1>Location Map</h1>
-    <label for="pinCodeInput">Enter PIN Code:</label>
-    <input type="text" id="pinCodeInput" placeholder="Enter PIN code">
-    <button type="submit" onclick="showLocation()">Show Location</button>
+<body class="container mt-5">
+    <h1 class="text-center">Location Map</h1>
+    <div class="form-group">
+        <label for="pinCodeInput">Enter PIN Code:</label>
+        <input type="text" class="form-control" id="pinCodeInput" placeholder="Enter PIN code">
+    </div>
+    <button class="btn btn-primary btn-block" onclick="showLocation()">Show Location</button>
     <div id="map"></div>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="map.js"></script>
 </body>
