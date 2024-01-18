@@ -6,17 +6,45 @@
     <title>Location Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        #pinCodeInput {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        #showLocationBtn {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
         #map {
             height: 400px;
             width: 100%;
+            margin-top: 20px;
         }
-    </style>
+        </style>
 </head>
 <body>
     <h1>Location Map</h1>
     <label for="pinCodeInput">Enter PIN Code:</label>
     <input type="text" id="pinCodeInput" placeholder="Enter PIN code">
-    <button onclick="showLocation()">Show Location</button>
+    <button type="submit" onclick="showLocation()">Show Location</button>
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
